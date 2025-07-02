@@ -1,5 +1,10 @@
 body {
     display: grid;
+    grid-template: auto 1fr auto / auto 1fr auto;
+}
+
+header {
+    grid-column: 1 / 4;
 }
 
 nav {
@@ -26,5 +31,6 @@ aside {
 }
 
 footer {
+    grid-column: 1 / 4;
     justify-content: center;
 }
