@@ -29,7 +29,7 @@ main {
     grid-column: 1 / 2;
 }
 
-div {
+.right {
     grid-column: 2 / 3;
 }
 
