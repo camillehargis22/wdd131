@@ -8,7 +8,7 @@ header {
     grid-column: 1 / 3;
 }
 
-nav {
+ul {
     background-color: blue;
     padding: 1rem;
     display: flex;
@@ -16,7 +16,7 @@ nav {
     align-items: center;
 }
 
-nav a {
+a {
     color: white;
     display: block;
     padding: 0.5rem;
