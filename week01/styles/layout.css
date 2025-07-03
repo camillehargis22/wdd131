@@ -1,11 +1,10 @@
 body {
     display: grid;
-    grid-template: auto 1fr auto / auto 1fr auto;
+    grid-template: auto 300px auto / auto auto auto auto;
 }
 
 header {
-    /* padding: 2rem; */
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
     background-color: lightblue;
 }
 
@@ -25,18 +24,19 @@ a {
     text-decoration: none;
 }
 
-div {
-    display: grid;
-}
-
-main {
-    grid-column: 1 / 2;
+.main {
+    grid-column: 1 / 3;
+    background-color: aquamarine;
+    padding: 25px;
 }
 
 .right {
-    grid-column: 2 / 1;
+    background-color:lavender;
+    padding: 25px;
 }
 
 footer {
     grid-column: 1 / 4;
+    background-color: lightblue;
+    text-align: center;
 }
