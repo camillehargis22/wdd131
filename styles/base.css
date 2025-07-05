@@ -68,8 +68,12 @@ h1 {
     padding: 15px;
 }
 
-img {
+.card img {
     float: right;
+}
+
+.card p {
+    padding-top: 50px;
 }
 
 footer {
