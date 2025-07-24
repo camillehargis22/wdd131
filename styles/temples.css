@@ -1,6 +1,6 @@
 .roboto {
   font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
+  /* font-optical-sizing: auto; */
   font-weight: 700;
   font-style: normal;
   font-variation-settings:
@@ -112,5 +112,5 @@ footer {
 }
 
 .active::before {
-	content: "📍";  /* just a wayfinding symbol for the user */
+	content: "📍";
 }
