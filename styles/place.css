@@ -1,6 +1,16 @@
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
 :root {
     background-color: #00849B;
     color: aquamarine;
+    font-family: 'Roboto', sans-serif;
 }
 
 header {
