@@ -19,9 +19,9 @@
     <main>
         <div>
             <picture>
-                <source srcset="images/hero-large.webp" media="(width > 800px)" width="1000px">
+                <source srcset="images/hero-large.webp" media="(width > 800px)" width="1000">
                 <source srcset="images/hero-small.webp" media="(width <= 800px)">
-                <img src="images/hero-small.webp" alt="Laie Hawaii Temple" width="600px">
+                <img src="images/hero-small.webp" alt="Laie Hawaii Temple" width="600">
             </picture>
         </div>
         <div class="data">
@@ -61,17 +61,17 @@
                     <th colspan="2">Weather</th>
                 </tr>
                 <tr class="picture">
-                    <td">
+                    <td colspan="2">
                         <picture>
                             <source srcset="images/667368_celcius_clouds_farenheit_sunshine_temerature_icon.webp" media="(width > 800px)">
-                            <source srcset="images/667368_celcius_clouds_farenheit_sunshine_temerature_icon.svg" media="(width <= 800px)" width="64px">
+                            <source srcset="images/667368_celcius_clouds_farenheit_sunshine_temerature_icon.svg" media="(width <= 800px)" width="64">
                             <img src="images/667368_celcius_clouds_farenheit_sunshine_temerature_icon.svg" alt="Weather Icon">
                         </picture>
                     </td>
                 </tr>
                 <tr>
                     <td class="label">Temperature: </td>
-                    <td class="value">84</td>
+                    <td class="value">84 F</td>
                 </tr>
                 <tr>
                     <td class="label">Precipitation: </td>
@@ -84,6 +84,10 @@
                 <tr>
                     <td class="label">Wind: </td>
                     <td class="value">18 mph</td>
+                </tr>
+                <tr>
+                    <td class="label">Wind Chill: </td>
+                    <td id="wind-chill"></td>
                 </tr>
             </table>
         </div>
