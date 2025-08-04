@@ -1,0 +1,121 @@
+.roboto {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    background-color: navy;
+    color: white;
+}
+
+h1 {
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin: auto;
+}
+
+#title {
+	margin: 10px;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1.5rem;
+	margin-left: 1rem;
+    color: navy;
+}
+
+nav {
+	max-width: 700px;
+	margin: 1rem auto;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 25px;
+    text-align: center;
+}
+
+.card {
+	background-color: lightgray;
+	padding: 10px;
+	border: 1px solid black;
+	width: fit-content;
+	margin: 0 auto;
+}
+
+img {
+    width: 100%;
+	box-shadow: 0 4px 8px 2px black;
+}
+
+footer {
+    text-align: center;
+    margin-top: 15px;
+    color: navy;
+}
+
+/* small view navigation */
+#menu {
+	font-size: 1.5rem;
+	border: 0;
+	background: none;
+	color: #000;
+ 	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.navigation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	list-style: none;
+}
+
+.navigation a {
+	display: none;
+	padding: 1rem;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+}
+.navigation a:hover {
+	background-color: lightblue;
+	color: darkblue;
+	font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.active::before {
+	content: "📍";
+}
