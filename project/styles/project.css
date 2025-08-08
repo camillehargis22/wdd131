@@ -1,0 +1,106 @@
+.libertinus-sans-regular {
+  font-family: "Libertinus Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #000080;
+  --secondary-color: #00FF00;
+  --primary-background-color: #7FFFDA;
+  --misc-background-color: #0000FF;
+  --misc-color: #FF66D8;
+  --font-family: 'Libertinus sans', sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--primary-color);
+  background-color: var(--misc-background-color);
+}
+
+header {
+  display: flex;
+  background-color: var(--primary-background-color);
+  padding: 5px;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-left: 1rem;
+  margin: auto;
+  padding-left: 5rem;
+  border-bottom: solid 2px var(--misc-color);
+}
+
+nav {
+  margin: 1rem auto;
+}
+
+#menu {
+  font-size: 1.5rem;
+  border: 0;
+  background: none;
+  color: #000;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+#menu.open::before {
+	content: "❌";
+}
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.navigation a {
+  display: none;
+  padding: 1rem;
+  text-align: center;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.navigation a:hover {
+  background-color: var(--misc-color);
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+	display: block;
+}
+
+.site-purpose, .scenarios, .wireframe, footer {
+  border: solid 2px var(--misc-color);
+  background-color: white;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+ul, h5, footer {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  font-weight: 700;
+}
+
+.wireframe img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 2px var(--secondary-color);
+  max-width: 100%;
+}
