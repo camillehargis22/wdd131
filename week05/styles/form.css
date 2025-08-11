@@ -1,0 +1,58 @@
+body {
+    font-size: 16px;
+    font-family: Verdana, sans-serif;
+}
+
+header, footer {
+    padding: .5rem 2%;
+    text-align: center;
+    background-color: purple;
+    color: white;
+}
+
+form {
+    background-color: lavender;
+    width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+fieldset {
+    border: none;
+}
+
+div {
+    padding-top: 1rem;
+    font-size: .9rem;
+    padding-bottom: .5rem;
+}
+
+input[type="text"],
+input[type="date"],
+select {
+    display: block;
+    margin-top: .5rem;
+    padding: .75rem;
+    width: 96%;
+    max-width: 400px;
+}
+
+label, textarea {
+    display: block;
+    width: 96%;
+    max-width: 400px;
+}
+
+textarea {
+    margin-top: .5rem;
+    padding-bottom: 3rem;
+}
+
+input[type="submit"] {
+    width: 96%;
+    max-width: 400px;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    font-size: large;
+}
