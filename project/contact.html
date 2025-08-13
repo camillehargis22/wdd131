@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 Project - Visiting Hawaii - Contact</title>
+    <meta name="description" content="Project for WDD 131 - Dynamic Web Fundamentals, Camille Hargis">
+    <meta name="author" content="Camille Hargis">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="scripts/project.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- <p>Logo</p> -->
+        <h1>Visiting Hawaii</h1>
+        <button id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" id="home">Home</a></li>
+                <li><a href="hike.html" id="hike">Waimea Hike</a></li>
+                <li><a href="beach.html" id="beach">Beach</a></li>
+                <li><a href="harbor.html" id="harbor">Pearl Harbor</a></li>
+                <li><a href="pcc.html" id="pcc">Polynesian Cultural Center</a></li>
+                <li><a href="contact.html">Share Your Story</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="info">
+            <h2>Tell Us Your Story!</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis eius debitis neque in doloribus hic amet fuga sit dolorum consequuntur assumenda, id, recusandae numquam temporibus aperiam vitae autem delectus perspiciatis unde illo laboriosam. Minima dolorum amet ut necessitatibus similique, alias a veniam enim, saepe quibusdam repellat quas corporis nam esse soluta unde voluptatibus ipsam vitae mollitia aperiam velit! Facere accusantium cupiditate, labore quis officiis tempora enim consequuntur animi dolores incidunt repellat fuga est libero? Ab, nobis minus! Libero, recusandae reiciendis! Magnam, autem doloremque. Neque et, reprehenderit inventore sunt nesciunt magni ex distinctio eos sequi, eligendi quibusdam architecto expedita ratione consectetur.</p>
+            <div class="form">
+                <form action="thanks.html" method="get">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label>First Name* <input type="text" name="fname" required></label>
+                        <label>Last Name <input type="text" name="lname"></label>
+                        <label>Email* <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>My Hawaii Story</legend>
+                        <textarea name="story" id="story" required></textarea>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Newsletter</legend>
+                        <div>May we Share your Story with others!*</div>
+                        <label><input type="radio" name="permission" value="Yes! Share My Story!" required>Yes, Share My Story!</label>
+                        <label><input type="radio" name="permission" value="Not right now" required>Not right now</label>
+                        <div>Sign Up to see other's Stories!*</div>
+                        <label><input type="radio" name="subscribe" value="Sign Me Up!" required>Sign Me Up!</label>
+                        <label><input type="radio" name="subscribe" value="Maybe Later" required>Maybe Later</label>
+                    </fieldset>
+                    <input type="submit" value="Share My Story">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🔹 Camille Hargis 🔹 Utah</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+        <p>camillelynncoding.com/visiting-hawaii</p>
+    </footer>
+</body>
+</html>
